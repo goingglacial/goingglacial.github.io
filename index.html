@@ -8,8 +8,10 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="goingglacial.github.io/css/colorbox.css">
     <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href="goingglacial.github.io/css/jquery.fancybox.css">
     <script type="text/javascript" href="goingglacial.github.io/scripts/jquery.min.js"></script>
     <script type="text/javascript" href="goingglacial.github.io/scripts/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" href="goingglacial.github.io/scripts/jquery.fancybox.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
     <style>
@@ -60,8 +62,8 @@
         <h1><a>Annie Kramer</a></h1>
         <br>
 
-        <p class="view"><a href="http://goingglacial.com">Going Glacial<small>Philosophical musings from east to West</small></a></p>
-        <p class="view"><a href="https://www.writelatex.com/read/nkvdghjgcsts">Resume<small>Feats big and small</small></a></p>
+        <p class="view"><a href="http://goingglacial.com">Going Glacial<small></small></a></p>
+        <a class="fancybox" data-fancybox-type="iframe" href="https://www.dropbox.com/s/3xgsbwqewdvz5ii/AnneDKramer_CV_1014.pdf?dl=0">Resume</a>
 
         <h3>I've built...</h3>
         <p class="view"><a href="http://goingglacial.com">Going Glacial<small>Philosophical musings from east to West</small></a></p>
@@ -73,6 +75,16 @@
         <p class="view"><a href="https://twitter.com/goingglacial" target="tab">Twitter<small></small></a></li>
 
         <h3><a id='poem-container' href='#'>Way out west...</a></h3>
+
+        <script>
+          $(".fancybox").fancybox({
+            openEffect  : 'none',
+            closeEffect : 'none',
+            iframe : {
+                preload: false
+            }
+        });
+        </script>
 
         <script>
           $(document).ready(function() {
