@@ -98,7 +98,7 @@ img {
 header {
   width:270px;
   float:left;
-  position:fixed;
+  position:relative;
 }
 
 header ul {
@@ -179,7 +179,7 @@ hr {
 footer {
   width:270px;
   float:left;
-  position:fixed;
+  position:relative;
   bottom:50px;
 }
 
@@ -192,7 +192,7 @@ footer {
   
   header, section, footer {
     float:none;
-    position:static;
+    position:relative;
     width:auto;
   }
   
@@ -228,7 +228,7 @@ footer {
   }
   
   header ul, header p.view {
-    position:static;
+    position:relative;
   }
   
   pre, code {
